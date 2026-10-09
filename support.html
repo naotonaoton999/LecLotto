@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — LecLotto</title>
+<meta name="description" content="LecLotto サポート">
+
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #667085;
+  --accent: #1f6f54;
+  --border: #d9dedb;
+  --link: #1769aa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101412;
+    --card: #171c19;
+    --text: #edf2ef;
+    --muted: #aab4ae;
+    --accent: #66c29a;
+    --border: #303a34;
+    --link: #74b7e8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  background: var(--bg);
+  color: var(--text);
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 22px 72px;
+}
+header {
+  margin-bottom: 28px;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+.tagline {
+  color: var(--muted);
+  margin-top: 4px;
+}
+nav {
+  margin: 24px 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav a, .button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--card);
+}
+nav a:hover, .button:hover {
+  border-color: var(--accent);
+}
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin: 18px 0;
+}
+h1, h2, h3 { line-height: 1.35; }
+h1 { font-size: 2rem; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; margin-top: 0; }
+h3 { font-size: 1.05rem; margin-top: 1.6em; }
+ul { padding-left: 1.4em; }
+code, kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .95em;
+}
+kbd {
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 1px 6px;
+  background: var(--bg);
+}
+.note {
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+}
+.small, footer {
+  color: var(--muted);
+  font-size: .92rem;
+}
+footer {
+  margin-top: 44px;
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+}
+a { color: var(--link); }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+th, td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+}
+th { width: 30%; }
+</style>
+
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">LecLotto</div>
+  <div class="tagline">サポート</div>
+</header>
+
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="privacy.html">プライバシーポリシー</a>
+</nav>
+
+<section>
+  <h1>LecLotto サポート</h1>
+  <p class="small">Version 1.0 / macOS</p>
+
+  <h2>対応環境</h2>
+  <table>
+    <tr><th>OS</th><td>macOS 15.0以降</td></tr>
+    <tr><th>画面構成</th><td>Mac単体の1画面、またはMac＋外部ディスプレイの2画面構成</td></tr>
+    <tr><th>プレゼンテーション</th><td>Microsoft PowerPoint for Macの発表者ツールとの併用を想定</td></tr>
+    <tr><th>名簿</th><td>Excel（.xlsx）</td></tr>
+  </table>
+  <p class="small">3画面以上の構成はVersion 1.0では正式な動作保証対象外です。</p>
+</section>
+
+<section>
+  <h2>基本的な使い方</h2>
+  <ol>
+    <li>Excel名簿を読み込みます。</li>
+    <li>通常講義または課題学習を選択します。</li>
+    <li>必要に応じて班／課題テーマの除外を設定します。</li>
+    <li>「講義用 🎲 を表示」を選択します。</li>
+    <li>「🎲 抽選」またはグローバルホットキー <kbd>⌃⌥⌘L</kbd> で抽選します。</li>
+    <li>当選者が表示されたら「出席・確定」または「欠席・再抽選」を選択します。</li>
+  </ol>
+  <p>仮当選者が表示されている状態で <kbd>⌃⌥⌘L</kbd> をもう一度押すと、「出席・確定」と同じ動作になります。</p>
+</section>
+
+<section>
+  <h2>Excel名簿の列</h2>
+  <p>「学籍番号」または「氏名」のどちらか一方があれば読み込み可能です。列の順番は自由です。</p>
+
+  <h3>認識される主な見出し</h3>
+  <table>
+    <tr><th>学籍番号</th><td>学籍番号、学生番号、学籍no、学籍no.、studentid、studentnumber</td></tr>
+    <tr><th>氏名</th><td>氏名、名前、学生氏名、name</td></tr>
+    <tr><th>読み仮名</th><td>読み仮名、読みがな、よみがな、ふりがな、フリガナ、かな、カナ</td></tr>
+    <tr><th>班</th><td>班名、班、グループ、group</td></tr>
+    <tr><th>課題テーマ</th><td>課題テーマ、テーマ、課題、theme</td></tr>
+  </table>
+</section>
+
+<section>
+  <h2>外部ディスプレイ</h2>
+  <p>2画面構成では、教員側に操作UI、学生側に抽選演出・当選結果を表示できます。「教員画面 ↔ 学生画面を入れ替える」で表示先を交換できます。</p>
+  <p>ミラーリングまたは1画面環境では、学生側に教員専用情報を出さない構成で動作します。</p>
+</section>
+
+<section>
+  <h2>効果音</h2>
+  <p>「その他」→「効果音をOFF」を有効にすると、抽選時のドラムロール音を停止できます。この設定はアプリ再起動後も保持されます。</p>
+</section>
+
+<section>
+  <h2>よくある問題</h2>
+
+  <h3>Excelファイルを読み込めない</h3>
+  <p>ファイルが.xlsx形式であること、および「学籍番号」または「氏名」に相当する列が存在することを確認してください。読み込みに失敗しても、現在の名簿は保持されます。</p>
+
+  <h3>抽選ボタンが使えない</h3>
+  <p>抽選可能な学生が0人の場合、または抽選中・仮当選者の処理待ちの場合は、新しい抽選を開始できません。</p>
+
+  <h3>ホットキーが反応しない</h3>
+  <p><kbd>⌃⌥⌘L</kbd> を同時に押してください。抽選アニメーション中は誤操作防止のため入力を無視します。</p>
+
+  <h3>PowerPointの操作に影響しますか？</h3>
+  <p>LecLottoはPowerPointを自動操作せず、通常のスライド送り操作を妨げない設計です。</p>
+
+  <h3>ネット接続は必要ですか？</h3>
+  <p>主要機能はオフラインで動作します。</p>
+</section>
+
+<section>
+  <h2>お問い合わせ</h2>
+  <p>不具合をご連絡いただく際は、次の情報があると確認がスムーズです。</p>
+  <ul>
+    <li>LecLottoのバージョン</li>
+    <li>macOSのバージョン</li>
+    <li>Macの機種</li>
+    <li>1画面／2画面のどちらか</li>
+    <li>問題が起きるまでの操作手順</li>
+  </ul>
+  <p class="note"><strong>公開前に連絡先メールアドレスまたは問い合わせフォームのURLをこの欄へ追加してください。</strong></p>
+</section>
+
+
+<footer>
+  <p>© 2026 Naoto Shirasu. All rights reserved.</p>
+  <p>LecLottoは独立して開発されたアプリです。MicrosoftおよびMicrosoft PowerPointとの提携・承認関係を示すものではありません。</p>
+</footer>
+
+</main>
+</body>
+</html>

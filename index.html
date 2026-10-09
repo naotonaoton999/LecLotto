@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LecLotto</title>
+<meta name="description" content="講義中の学生ランダム指名を支援するmacOSアプリ LecLotto">
+
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #667085;
+  --accent: #1f6f54;
+  --border: #d9dedb;
+  --link: #1769aa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101412;
+    --card: #171c19;
+    --text: #edf2ef;
+    --muted: #aab4ae;
+    --accent: #66c29a;
+    --border: #303a34;
+    --link: #74b7e8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  background: var(--bg);
+  color: var(--text);
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 22px 72px;
+}
+header {
+  margin-bottom: 28px;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+.tagline {
+  color: var(--muted);
+  margin-top: 4px;
+}
+nav {
+  margin: 24px 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav a, .button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--card);
+}
+nav a:hover, .button:hover {
+  border-color: var(--accent);
+}
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin: 18px 0;
+}
+h1, h2, h3 { line-height: 1.35; }
+h1 { font-size: 2rem; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; margin-top: 0; }
+h3 { font-size: 1.05rem; margin-top: 1.6em; }
+ul { padding-left: 1.4em; }
+code, kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .95em;
+}
+kbd {
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 1px 6px;
+  background: var(--bg);
+}
+.note {
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+}
+.small, footer {
+  color: var(--muted);
+  font-size: .92rem;
+}
+footer {
+  margin-top: 44px;
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+}
+a { color: var(--link); }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+th, td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+}
+th { width: 30%; }
+</style>
+
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">LecLotto</div>
+  <div class="tagline">講義用ランダム抽選 — macOS</div>
+</header>
+
+<nav>
+  <a href="privacy.html">プライバシーポリシー</a>
+  <a href="support.html">サポート</a>
+</nav>
+
+<section>
+  <h1>講義中の学生指名を、すばやく・公平に。</h1>
+  <p>LecLottoは、Excel名簿から学生をランダムに抽選し、講義中の指名を支援するmacOSアプリです。</p>
+  <ul>
+    <li>Excel名簿の読み込み</li>
+    <li>通常講義／課題学習モード</li>
+    <li>班・課題テーマによる除外</li>
+    <li>PowerPointの発表者ツールと併用可能</li>
+    <li>1画面／2画面構成に対応</li>
+    <li>抽選履歴のCSV書き出し</li>
+    <li>グローバルホットキー <kbd>⌃⌥⌘L</kbd> で抽選／出席確定</li>
+    <li>効果音OFF設定</li>
+  </ul>
+</section>
+
+<section>
+  <h2>プライバシー</h2>
+  <p>名簿、抽選履歴、アプリ設定はMac上で処理され、LecLottoの開発者または第三者のサーバへ送信されません。</p>
+  <p><a href="privacy.html">プライバシーポリシーを読む</a></p>
+</section>
+
+<section>
+  <h2>サポート</h2>
+  <p>対応環境、Excel列仕様、外部ディスプレイ、よくある問題についてはサポートページをご覧ください。</p>
+  <p><a href="support.html">サポートページを開く</a></p>
+</section>
+
+
+<footer>
+  <p>© 2026 Naoto Shirasu. All rights reserved.</p>
+  <p>LecLottoは独立して開発されたアプリです。MicrosoftおよびMicrosoft PowerPointとの提携・承認関係を示すものではありません。</p>
+</footer>
+
+</main>
+</body>
+</html>

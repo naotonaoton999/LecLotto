@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー — LecLotto</title>
+<meta name="description" content="LecLotto プライバシーポリシー">
+
+<style>
+:root {
+  color-scheme: light dark;
+  --bg: #f7f7f5;
+  --card: #ffffff;
+  --text: #1f2328;
+  --muted: #667085;
+  --accent: #1f6f54;
+  --border: #d9dedb;
+  --link: #1769aa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #101412;
+    --card: #171c19;
+    --text: #edf2ef;
+    --muted: #aab4ae;
+    --accent: #66c29a;
+    --border: #303a34;
+    --link: #74b7e8;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
+               "Hiragino Sans", "Yu Gothic", Meiryo, sans-serif;
+  line-height: 1.75;
+  background: var(--bg);
+  color: var(--text);
+}
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 22px 72px;
+}
+header {
+  margin-bottom: 28px;
+}
+.brand {
+  font-size: 2rem;
+  font-weight: 750;
+  letter-spacing: -0.02em;
+}
+.tagline {
+  color: var(--muted);
+  margin-top: 4px;
+}
+nav {
+  margin: 24px 0 36px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav a, .button {
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  text-decoration: none;
+  color: var(--text);
+  background: var(--card);
+}
+nav a:hover, .button:hover {
+  border-color: var(--accent);
+}
+section {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px 26px;
+  margin: 18px 0;
+}
+h1, h2, h3 { line-height: 1.35; }
+h1 { font-size: 2rem; margin: 0 0 12px; }
+h2 { font-size: 1.25rem; margin-top: 0; }
+h3 { font-size: 1.05rem; margin-top: 1.6em; }
+ul { padding-left: 1.4em; }
+code, kbd {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: .95em;
+}
+kbd {
+  border: 1px solid var(--border);
+  border-bottom-width: 2px;
+  border-radius: 6px;
+  padding: 1px 6px;
+  background: var(--bg);
+}
+.note {
+  border-left: 4px solid var(--accent);
+  padding-left: 16px;
+}
+.small, footer {
+  color: var(--muted);
+  font-size: .92rem;
+}
+footer {
+  margin-top: 44px;
+  border-top: 1px solid var(--border);
+  padding-top: 22px;
+}
+a { color: var(--link); }
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 16px 0;
+}
+th, td {
+  border-bottom: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  padding: 10px 8px;
+}
+th { width: 30%; }
+</style>
+
+</head>
+<body>
+<main>
+<header>
+  <div class="brand">LecLotto</div>
+  <div class="tagline">プライバシーポリシー</div>
+</header>
+
+<nav>
+  <a href="index.html">トップ</a>
+  <a href="support.html">サポート</a>
+</nav>
+
+<section>
+  <h1>プライバシーポリシー</h1>
+  <p class="small">最終更新日：2026年10月9日</p>
+
+  <h2>1. 基本方針</h2>
+  <p>LecLotto（以下「本アプリ」）は、講義中の学生ランダム抽選を支援するmacOSアプリです。本アプリは、ユーザーの名簿データ、抽選履歴、アプリ設定その他の利用データを、開発者または第三者のサーバへ送信しません。</p>
+
+  <h2>2. データの収集</h2>
+  <p><strong>本アプリは、ユーザーからデータを収集しません。</strong></p>
+  <p>AppleのApp Privacyにおける「収集」に該当する、端末外へのデータ送信・保存は行いません。</p>
+
+  <h2>3. Excel名簿</h2>
+  <p>本アプリは、ユーザーが明示的に選択したExcelファイル（.xlsx）を読み込みます。名簿には、学籍番号、氏名、読み仮名、班名、課題テーマ等が含まれる場合があります。</p>
+  <p>これらのデータは本アプリの機能提供のためMac上で処理され、開発者または第三者へ送信されません。</p>
+
+  <h2>4. ローカル保存</h2>
+  <p>本アプリは、名簿、抽選セッションの状態、表示設定、効果音設定等を、macOSのローカルストレージ（UserDefaults等）に保存する場合があります。</p>
+  <p>これらは本アプリの再起動後に状態を復元するために使用され、外部サーバへ送信されません。</p>
+
+  <h2>5. CSV書き出し</h2>
+  <p>抽選履歴は、ユーザーの操作によりCSVファイルとして保存できます。保存先はユーザーが選択します。本アプリがCSVファイルを外部へ自動送信することはありません。</p>
+
+  <h2>6. ネットワーク通信</h2>
+  <p>本アプリの主要機能はオフラインで動作します。本アプリは、名簿、抽選履歴、設定等を開発者または第三者のサーバへ送信しません。</p>
+
+  <h2>7. アナリティクス・トラッキング・広告</h2>
+  <ul>
+    <li>アクセス解析・利用解析：行いません。</li>
+    <li>ユーザートラッキング：行いません。</li>
+    <li>広告表示：行いません。</li>
+    <li>第三者広告SDK：使用しません。</li>
+  </ul>
+
+  <h2>8. アカウント</h2>
+  <p>本アプリの利用にアカウント登録は必要ありません。</p>
+
+  <h2>9. 第三者ライブラリおよび効果音</h2>
+  <p>本アプリはExcelファイルの読み込み等のためにオープンソースライブラリを使用します。これらはアプリ内でローカルに処理を行う目的で利用されます。</p>
+  <p>また、抽選演出用の効果音には「効果音ラボ」で公開されている音源を加工して使用しています。効果音の再生によってユーザーデータが効果音提供者へ送信されることはありません。</p>
+
+  <h2>10. 児童のプライバシー</h2>
+  <p>本アプリは教育現場での利用を想定していますが、学生自身にアカウント登録を求めたり、学生からデータをオンラインで収集したりする機能はありません。</p>
+
+  <h2>11. 本ポリシーの変更</h2>
+  <p>本アプリの機能変更や法令・プラットフォーム要件の変更に応じて、本ポリシーを改定する場合があります。重要な変更がある場合は、このページを更新します。</p>
+
+  <h2>12. お問い合わせ</h2>
+  <p>本アプリに関するお問い合わせは、<a href="support.html">LecLotto サポートページ</a>をご利用ください。</p>
+</section>
+
+
+<footer>
+  <p>© 2026 Naoto Shirasu. All rights reserved.</p>
+  <p>LecLottoは独立して開発されたアプリです。MicrosoftおよびMicrosoft PowerPointとの提携・承認関係を示すものではありません。</p>
+</footer>
+
+</main>
+</body>
+</html>
