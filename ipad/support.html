@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>サポート — LecLotto for iPad</title>
+<meta name="description" content="iPad版LecLottoの操作方法、Control Center、Excel名簿、PowerPoint併用の既知の制限と対処方法。">
+<link rel="stylesheet" href="style.css">
+</head>
+<body><main><header><div class="brand">LecLotto for iPad</div><div class="tagline">講義・演習向けランダム抽選 — iPad版</div></header>
+<nav aria-label="サイト内ナビゲーション"><a href="../index.html">Mac版トップ</a><a href="index.html">iPad版トップ</a><a href="support.html" aria-current="page">iPad版サポート</a><a href="privacy.html">iPad版プライバシー</a></nav>
+<section>
+<h1>サポート・基本操作</h1>
+<p class="small">LecLotto for iPad / Version 1.0。iPad Pro（M5）・iPadOS 27.0.1で主要機能を確認しています。配信対象の最低OSは、公開時のApp Store情報でご確認ください。</p>
+<h2>1. Excel名簿を読み込む</h2>
+<p>教員画面の名簿読み込みから、暗号化されていないExcel（.xlsx）ファイルを選びます。学籍番号または氏名の列があれば読み込み可能です。読み仮名、班名、課題テーマは任意です。複数シートを含む場合、アプリが適切と判定した1シートを読み込みます。</p>
+<p>Mac版サイトで公開中の<a href="../LecLotto_Sample_Roster.xlsx">架空の学生6名によるサンプル名簿（.xlsx）</a>も形式の参考にできます。実名を含む名簿を一般公開しないでください。</p>
+<h2>2. 抽選を行う</h2>
+<p>画面中央の黄色い「抽選」ボタンをタップすると、学生向けドラムリールが始まります。当選後は、教員画面で「出席・確定」または「欠席・再抽選」を選びます。抽選中および未処理の当選結果がある間は、重複抽選を防止します。</p>
+<h2>3. コントロールセンターから始める</h2>
+<p>iPadのコントロールセンターを開き、編集画面の「コントロールを追加」から「LecLotto 抽選」を追加してください。以後、そこから抽選を開始できます。実行時はLecLottoアプリが前面に切り替わります。追加操作はユーザーが行います。</p>
+<h2>4. 学生向け表示</h2>
+<p>外部ディスプレイ接続時はiPadに教員画面、外部に学生向けの抽選演出と結果を表示します。外部ディスプレイがない場合はiPad内に学生向け全画面表示が現れます。「教員画面に戻る」で閉じても出席確定にはなりません。</p>
+<h2>5. 履歴とCSV</h2>
+<p>履歴画面から抽選結果を確認し、CSV形式で書き出せます。CSVの保存先はご自身で選択してください。ファイルに含まれる学生情報は取り扱いにご注意ください。</p>
+</section>
+<section id="powerpoint"><h2>PowerPointと併用する場合の既知の制限</h2>
+<p class="note"><strong>確認済みの環境：</strong>iPad Pro（M5）／iPadOS 27.0.1／PowerPoint for iPad 2.114.26100137／USB-C有線外部ディスプレイ。</p>
+<p>PowerPointで発表者画面と外部スライドを表示した状態から、LecLottoなど別アプリへ切り替え、PowerPointへ戻ると、iPadの発表者画面は残っていても、外部ディスプレイのスライド表示が復帰しない場合があります。Safariへ切り替えた場合にも同じ現象を確認しています。</p>
+<p><strong>対処：</strong>PowerPointのスライドショーをいったん終了し、改めて開始すると外部スライドが復旧します。LecLottoの学生向け外部表示は別途動作しています。現象の根本原因は確定していません。</p>
+<p>PowerPointと併用する講義では、授業前に接続・切替動作をご確認ください。OSやPowerPointの更新後は状況が変わる可能性があります。</p>
+</section>
+<section><h2>よくあるご質問</h2>
+<h3>Excelを読み込めません</h3><p>ファイルが.xlsx形式か、パスワード保護されていないか、学籍番号または氏名に相当する列があるかをご確認ください。読み込みに失敗しても、既存名簿は保持されます。</p>
+<h3>抽選ボタンが反応しません</h3><p>抽選できる学生が0名の場合や、抽選中・当選結果の確定待ちの場合は新たに抽選できません。</p>
+<h3>コントロールセンターにボタンがありません</h3><p>「コントロールを追加」から手動で追加してください。アプリをインストールしただけでは、自動で配置されません。</p>
+<h3>リセットすると名簿は消えますか？</h3><p>抽選のリセットは名簿を残したまま、現在の抽選状態や履歴などを初期化します。CSVに書き出したファイルは別途管理してください。</p>
+</section>
+<section><h2>お問い合わせ（Mac版と共通）</h2>
+<p><a href="mailto:shirasun-leclottosupport@yahoo.co.jp">shirasun-leclottosupport@yahoo.co.jp</a></p>
+<p>ご連絡の際は「iPad版」と明記し、iPadの機種、iPadOSのバージョン、アプリのバージョン、外部ディスプレイ接続の有無、再現手順を添えてください。実際の学生名簿を添付する必要はありません。</p>
+</section>
+<footer><p>© 2026 Naoto Shirasu. All rights reserved.</p><p>LecLottoは独立して開発されたアプリです。MicrosoftおよびMicrosoft PowerPointとの提携・承認関係を示すものではありません。</p></footer></main></body>
+</html>
